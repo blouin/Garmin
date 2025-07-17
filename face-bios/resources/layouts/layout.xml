@@ -1,0 +1,23 @@
+<layout id="WatchFace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+    <drawable class="UI.Background" />
+
+    <!-- Always shown -->
+    <drawable class="UI.Complication" id="Time">
+        <param name="posIndex">0</param>
+    </drawable>
+    <drawable class="UI.Complication" id="Date">
+        <param name="posIndex">1</param>
+    </drawable>
+    <drawable class="UI.Complication" id="Batt">
+        <param name="posIndex">2</param>
+    </drawable>
+
+    <!-- Two more -->
+    <drawable class="UI.Complication" id="Extra1">
+        <param name="posIndex">3</param>
+    </drawable>
+    <drawable class="UI.Complication" id="Extra2">
+        <param name="posIndex">4</param>
+    </drawable>
+
+</layout>

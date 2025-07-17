@@ -1,0 +1,28 @@
+<settings>
+
+    <setting propertyKey="@Properties.Theme" title="@Strings.SettingTheme">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.SettingThemeLight</listEntry>
+            <listEntry value="1">@Strings.SettingThemeDark</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.Complication1" title="@Strings.SettingComplication1">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.SettingComplicationSteps</listEntry>
+            <listEntry value="1">@Strings.SettingComplicationHR</listEntry>
+            <listEntry value="2">@Strings.SettingComplicationWeather</listEntry>
+            <listEntry value="-1">@Strings.SettingComplicationNone</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.Complication2" title="@Strings.SettingComplication2">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.SettingComplicationSteps</listEntry>
+            <listEntry value="1">@Strings.SettingComplicationHR</listEntry>
+            <listEntry value="2">@Strings.SettingComplicationWeather</listEntry>
+            <listEntry value="-1">@Strings.SettingComplicationNone</listEntry>
+        </settingConfig>
+    </setting>
+
+</settings>

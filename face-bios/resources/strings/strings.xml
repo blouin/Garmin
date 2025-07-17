@@ -1,0 +1,28 @@
+<strings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+    <string id="AppName">Legacy BIOS facewatch</string>
+
+    <!-- Text on background drawable -->
+    <string id="BG_BIOS">BIOS</string>
+    <string id="BG_SetupUtility">Setup Utility</string>
+    <string id="BG_MenuMain">MAIN</string>
+    <string id="BG_MenuAdvanced">Advanced</string>
+    <string id="BG_MenuBoot">Boot</string>
+    <string id="BG_OptHelp">Help</string>
+    <string id="BG_OptSave">Save</string>
+    <string id="BG_OptExit">Exit</string>
+    <string id="BG_OptF1">F1</string>
+    <string id="BG_OptF9">F9</string>
+    <string id="BG_OptEsc">Esc</string>
+
+    <!-- Settings -->
+    <string id="SettingTheme">Theme</string>
+    <string id="SettingThemeLight">Light</string>
+    <string id="SettingThemeDark">Dark</string>
+    <string id="SettingComplication1">Complication #1</string>
+    <string id="SettingComplication2">Complication #2</string>
+    <string id="SettingComplicationSteps">Steps</string>
+    <string id="SettingComplicationHR">Heart Rate</string>
+    <string id="SettingComplicationWeather">Weather</string>
+    <string id="SettingComplicationNone">(None)</string>
+
+</strings>

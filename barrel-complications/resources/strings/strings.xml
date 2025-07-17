@@ -1,0 +1,10 @@
+<strings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+
+    <string id="BATT">Battery</string>
+    <string id="DATE">Date</string>
+    <string id="HR">HR</string>
+    <string id="STEPS">Steps</string>
+    <string id="TIME">Time</string>
+    <string id="WEATHER">Weather</string>
+
+</strings>

@@ -1,0 +1,17 @@
+<strings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+    <string id="AppName">JSON facewatch</string>
+
+    <string id="SectionInfo">info</string>
+    <string id="SectionHealth">health</string>
+
+    <string id="TypeJson">json</string>
+    <string id="TypeYaml">yaml</string>
+
+    <!-- Settings -->
+    <string id="SettingName">Name</string>
+    <string id="SettingType">Type</string>
+    <string id="SettingTheme">Theme</string>
+    <string id="SettingThemeLight">Light</string>
+    <string id="SettingThemeDark">Dark</string>
+
+</strings>

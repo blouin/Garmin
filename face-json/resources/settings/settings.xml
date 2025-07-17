@@ -1,0 +1,21 @@
+<settings>
+
+    <setting propertyKey="@Properties.Name" title="@Strings.SettingName">
+        <settingConfig type="alphaNumeric" />
+    </setting>
+
+    <setting propertyKey="@Properties.Type" title="@Strings.SettingType">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.TypeJson</listEntry>
+            <listEntry value="1">@Strings.TypeYaml</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.Theme" title="@Strings.SettingTheme">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.SettingThemeLight</listEntry>
+            <listEntry value="1">@Strings.SettingThemeDark</listEntry>
+        </settingConfig>
+    </setting>
+
+</settings>
