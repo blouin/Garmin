@@ -15,8 +15,10 @@ module Util {
     }
 
     typedef Converter as interface {
+        function getExtension() as String;
+
         function getViewTopYOffset() as Numeric;
-         function getViewTopXOffset() as Numeric;
+        function getViewTopXOffset() as Numeric;
 
         function getStartDocument(color as Numeric) as Array<TextBlock>;
         function getEndDocument(color as Numeric) as Array<TextBlock>;

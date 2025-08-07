@@ -5,6 +5,10 @@ using Barrel.Complications as MyComplications;
 module Util {
 
     class JSON {
+        function getExtension() as String {
+            return Application.loadResource(Rez.Strings.TypeJson);
+        }
+
         function getViewTopYOffset() as Numeric {
             return 0;
         }

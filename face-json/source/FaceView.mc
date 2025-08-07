@@ -27,10 +27,15 @@ class FaceView extends WatchUi.WatchFace {
     function onLayout(dc as Dc) as Void {
         setLayout(Rez.Layouts.WatchFace(dc));
  
+        var c = Application.getApp().getConverter();
+
         var fg = View.findDrawableById("Foreground") as UI.Foreground;
-        fg.setConverter(new Util.JSON());
+        fg.setConverter(c);
         fg.setInfoModelUpdaters(_infoComplications);
         fg.setStatModelUpdaters(_statComplications);
+
+        var tb = View.findDrawableById("Tab") as UI.Tab;
+        tb.setConverter(c);
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -58,5 +63,4 @@ class FaceView extends WatchUi.WatchFace {
     // Terminate any active timers and prepare for slow updates.
     function onEnterSleep() as Void {
     }
-
 }

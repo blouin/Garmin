@@ -5,6 +5,10 @@ using Barrel.Complications as MyComplications;
 module Util {
 
     class YAML {
+        function getExtension() as String {
+            return Application.loadResource(Rez.Strings.TypeYaml);
+        }
+
         function getViewTopYOffset() as Numeric {
             return 15;
         }

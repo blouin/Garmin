@@ -4,7 +4,9 @@ import Toybox.WatchUi;
 
 module UI {
 
-    class BackgroundTab extends WatchUi.Drawable {
+    class Tab extends WatchUi.Drawable {
+
+        private var _converter as Util.Converter?;
 
         var _blue = Graphics.COLOR_DK_BLUE;
         var _gray = Graphics.COLOR_DK_GRAY;
@@ -14,8 +16,12 @@ module UI {
         var _topX = 55; //85
         var _topY = 0;
 
-        public function initialize() {
-            Drawable.initialize({});
+        public function initialize(params as { :id as String }) {
+            Drawable.initialize(params);
+        }
+
+        public function setConverter(converter as Util.Converter) as Void {
+            _converter = converter;
         }
 
         function draw(dc as Dc) as Void {
@@ -24,7 +30,7 @@ module UI {
 
             // Calculate name of tab
             var name = Application.Properties.getValue("Name");
-            var ext = getExtension(Application.Properties.getValue("Type"));
+            var ext = _converter.getExtension();
             var full = (name + "." + ext + "  x").toLower();
 
             // Get size of text
@@ -42,14 +48,5 @@ module UI {
             dc.setColor(_white, Graphics.COLOR_TRANSPARENT);
             dc.drawText(_topX + 5, _topY + 7, Graphics.FONT_XTINY, full, Graphics.TEXT_JUSTIFY_LEFT);
         }
-
-        hidden function getExtension(id as Number) as String {
-            if (id == 1) {
-                return Application.loadResource(Rez.Strings.TypeYaml);
-            }
-
-            return Application.loadResource(Rez.Strings.TypeJson);
-        }
-
     }
 }

@@ -27,8 +27,12 @@ class FaceApp extends Application.AppBase {
         WatchUi.requestUpdate();
     }
 
-}
-
-function getApp() as FaceApp {
-    return Application.getApp() as FaceApp;
+    function getConverter() {
+        var id = Application.Properties.getValue("Type");
+        if (id == 1) {
+            return new Util.YAML();
+        }
+        
+        return new Util.JSON();
+    }
 }
